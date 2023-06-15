@@ -1,0 +1,276 @@
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.first-content {
+  position: relative;
+  display: block;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+  height: 532px;
+}
+
+.text-on-video {
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-buy {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-lg {
+  background-color: yellow !important;
+  border: none !important;
+  color: black !important;
+}
+
+.btn-lg:hover {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+.brand {
+  margin-top: 60px;
+}
+
+.list-brand {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-brand {
+  list-style-type: none;
+}
+
+/* NEWS CSS */
+.btn-view-more {
+  color: #000 !important;
+  background-color: #ebebf2 !important;
+}
+
+.btn-view-more:hover {
+  color: #ebebf2 !important;
+  background-color: #000 !important;
+}
+
+.title-news {
+  color: yellow;
+  font-family: monospace;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.news-content {
+  background-color: black;
+}
+
+.direction {
+  text-align: center;
+  background-color: black;
+}
+.direction button {
+  font-family: cursive;
+  font-weight: bold;
+  background-color: #ffffff44;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 0 10px;
+}
+.direction button:hover {
+  background-color: #ffffff;
+}
+.item {
+  border-radius: 15px;
+  width: 300px;
+  height: 500px;
+  background-image: linear-gradient(to top, #aec0ce, #ececf2);
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px;
+  scroll-snap-align: start;
+}
+.item .avatar {
+  display: block;
+  margin: 50px auto 10px;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px #7e878d;
+}
+.item .avatar:hover {
+  transform: translateY(-5px);
+}
+.item .content {
+  padding: 30px;
+  font-family: monospace;
+}
+.item .content table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #aec0ce;
+}
+.item .content table td:nth-child(2) {
+  text-align: right;
+}
+.item .nameGroup {
+  text-align: center;
+  border-bottom: none !important;
+}
+#list {
+  display: flex;
+  width: max-content;
+}
+#formList {
+  width: 1280px;
+  max-width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .item {
+    width: calc(33.3vw - 20px);
+  }
+  .direction {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(50vw - 20px);
+  }
+  .direction {
+    display: none;
+  }
+}
+/* END NEWS CSS */
+/* card news css */
+.card-news {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 18rem;
+  height: 28rem !important;
+  border-radius: 20px !important;
+  background-image: linear-gradient(to top, #aec0ce, #ececf2);
+}
+
+.fa-arrow-right {
+  opacity: 0;
+  transform: translateX(-17px);
+}
+
+.card:hover .fa-arrow-right {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: all 0.4s ease-in-out;
+  color: darkcyan;
+}
+
+.card:hover .card-img-top {
+  scale: 1.1;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-news .card-img-top {
+  width: 260px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 18px;
+}
+
+.btn-view-all {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* end card news css */
+
+/* responsive css */
+@media (max-width: 768px) {
+  video {
+    position: fixed;
+    z-index: -1;
+  }
+
+  .text-on-vid {
+    width: 80vw;
+  }
+
+  .list-brand {
+    flex-wrap: wrap;
+  }
+
+  .first-content {
+    margin-bottom: calc(100vh - 532px - 80px);
+  }
+
+  .news-content {
+    padding: 0 10px !important;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .card-news .card-img-top {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  video {
+    position: fixed;
+    z-index: -1;
+  }
+
+  .list-brand {
+    flex-wrap: wrap;
+  }
+  .first-content {
+    margin-bottom: calc(100vh - 532px - 80px);
+  }
+}
