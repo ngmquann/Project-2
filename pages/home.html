@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gundam-X</title>
   <link rel="icon" href="../assets/img/logo tách nền.png" type="image/x-icon">
+  <!-- link gg font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
   <!-- link css -->
   <link rel="stylesheet" href="../assets/css/home.css">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -64,8 +66,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="model.html">Model Gundam</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Model Gundam
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Option 1</a></li>
+              <li><a class="dropdown-item" href="#">Option 2</a></li>
+              <li><a class="dropdown-item" href="#">Option 3</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">News Gundam</a>
@@ -74,9 +83,13 @@
             <a class="nav-link" href="">About us</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="">Blogs</a>
+          </li>
+          <li class="nav-item">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success" type="submit"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
             </form>
           </li>
           <li class="nav-item">
@@ -94,7 +107,7 @@
   <!-- body-content -->
   <main role="main">
     <div class="video">
-      <video muted autoplay loop>
+      <video muted loop autoplay>
         <source src="../assets/video/738de74052df4dd2be35d60d7ce1b4610aee6269b9ff44d4baeb5a004f46f3f3.mp4"
           type="video/mp4" asp-append-version="true">
       </video>
@@ -102,11 +115,6 @@
     <div class="first-content">
       <div class="text-on-video">
         <img src="../assets/img/text logo.png" alt="" class="text-on-vid">
-      </div>
-      <div class="btn-buy">
-        <button type="button" class="btn btn-primary btn-lg">
-          <span class="text-in-btn">Buy Now</span>
-        </button>
       </div>
       <div class="brand">
         <div class="list-brand">
@@ -127,191 +135,157 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="news-content">
-      <h1 class="title-news">NEWS</h1>
-      <div class="card-news">
-        <div class="card">
-          <img src="../assets/img/img demo.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="read-more">Read more</a><i class="fa-solid fa-arrow-right"></i>
-          </div>
+      <div class="banner my-5">
+        <div class="item-banner">
+          <img src="../assets/img/home-img/b1591458243a517340e6af6ff6439efc.png" class="img-banner" alt="" srcset="">
         </div>
-        <div class="card">
-          <img src="../assets/img/img demo.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="read-more">Read more</a><i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/img/img demo.jpg" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="read-more">Read more</a><i class="fa-solid fa-arrow-right"></i>
-          </div>
+        <div class="item-banner">
+          <img src="../assets/img/home-img/d5a3a4e479e87eeedaf8f36545c70988.png" class="img-banner" alt="" srcset="">
         </div>
       </div>
-      <div class="btn-view-all">
-        <button type="button" class="btn btn-warning">View All</button>
-      </div>
     </div>
-    <div class="news-content">
-      <h1 class="title-news">MODEL</h1>
+
+    <div class="model">
+      <h1 class="title-model">Product New</h1>
       <div id="formList">
         <div id="list">
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
+          <div class="model-card">
+            <div class="model-card-content">
+              <h2 class="model-card-title">
+                Title
+              </h2>
+              <p class="model-card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid sapiente cumque blanditiis
+                quis
+                in
+              </p>
+              <a href="#" class="model-btn">Add to cart</a>
+              <a href="#" class="model-btn">Buy now</a>
             </div>
           </div>
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
+          <div class="model-card">
+            <div class="model-card-content">
+              <h2 class="model-card-title">
+                Title
+              </h2>
+              <p class="model-card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid sapiente cumque blanditiis
+                quis
+                in
+              </p>
+              <a href="#" class="model-btn">Add to cart</a>
+              <a href="#" class="model-btn">Buy now</a>
             </div>
           </div>
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
+          <div class="model-card">
+            <div class="model-card-content">
+              <h2 class="model-card-title">
+                Title
+              </h2>
+              <p class="model-card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid sapiente cumque blanditiis
+                quis
+                in
+              </p>
+              <a href="#" class="model-btn">Add to cart</a>
+              <a href="#" class="model-btn">Buy now</a>
             </div>
           </div>
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
+          <div class="model-card">
+            <div class="model-card-content">
+              <h2 class="model-card-title">
+                Title
+              </h2>
+              <p class="model-card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid sapiente cumque blanditiis
+                quis
+                in
+              </p>
+              <a href="#" class="model-btn">Add to cart</a>
+              <a href="#" class="model-btn">Buy now</a>
             </div>
           </div>
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="item">
-            <img src="../assets/img/img demo.jpg" class="avatar">
-            <div class="content">
-              <table width="100%" cellspacing="0">
-                <tr>
-                  <td>
-                    <h5 class="card-title">News Title</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's
-                      content.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td colspan="2" class="nameGroup"><a href="#" class="btn btn-view-more">View more</a></td>
-                </tr>
-              </table>
+          <div class="model-card">
+            <div class="model-card-content">
+              <h2 class="model-card-title">
+                Title
+              </h2>
+              <p class="model-card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquid sapiente cumque blanditiis
+                quis
+                in
+              </p>
+              <a href="#" class="model-btn">Add to cart</a>
+              <a href="#" class="model-btn">Buy now</a>
             </div>
           </div>
         </div>
+
+
+      </div>
+
+      <div class="direction" style="padding: 20px;">
+        <button id="prev"><i class="fa-solid fa-less-than"></i></button>
+        <button id="next"><i class="fa-solid fa-greater-than"></i></button>
       </div>
     </div>
-    <div class="direction" style="padding: 20px;">
-      <button id="prev">
-        < </button>
-          <button id="next"> > </button>
+
+    <div class="news">
+      <h1 class="title-model">News</h1>
+      <div class="news-container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/img/brand/HGSEEDlogo.png" class="img-carousel d-block" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/brand/izic2c.png" class="img-carousel d-block" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/brand/MG.png" class="img-carousel d-block" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/brand/Perfect_Grade_Modelo_gundam.svg.png" class="img-carousel d-block" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fourth slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
 
   </main>
@@ -406,11 +380,11 @@
 
 <script>
   document.getElementById('next').onclick = function () {
-    const widthItem = document.querySelector('.item').offsetWidth;
+    const widthItem = document.querySelector('.model-card').offsetWidth;
     document.getElementById('formList').scrollLeft += widthItem;
   }
   document.getElementById('prev').onclick = function () {
-    const widthItem = document.querySelector('.item').offsetWidth;
+    const widthItem = document.querySelector('.model-card').offsetWidth;
     document.getElementById('formList').scrollLeft -= widthItem;
   }
 

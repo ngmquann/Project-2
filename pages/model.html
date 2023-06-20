@@ -94,27 +94,22 @@
   <main role="main">
     <div class="container my-2">
       <div class="row">
-        <div class="col-md-2">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, possimus esse nam obcaecati
-            blanditiis est officia impedit similique itaque maiores ab odit necessitatibus commodi? Eaque sapiente qui
-            perspiciatis totam.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, possimus esse nam obcaecati
-            blanditiis est officia impedit similique itaque maiores ab odit necessitatibus commodi? Eaque sapiente qui
-            perspiciatis totam.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, possimus esse nam obcaecati
-            blanditiis est officia impedit similique itaque maiores ab odit necessitatibus commodi? Eaque sapiente qui
-            perspiciatis totam.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, possimus esse nam obcaecati
-            blanditiis est officia impedit similique itaque maiores ab odit necessitatibus commodi? Eaque sapiente qui
-            perspiciatis totam.</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora, possimus esse nam obcaecati
-            blanditiis est officia impedit similique itaque maiores ab odit necessitatibus commodi? Eaque sapiente qui
-            perspiciatis totam.</p>
-
+        <div class="col-md-2 my-2">
+          <div class="row">
+            <h5>Danh Mục Sản Phẩm</h5>
+          </div>
+          <hr>
+          <div class="row">
+            <a href="#" id="name-brand" class="name-brand my-2">MG</a>
+            <a href="#" class="name-brand my-2">RG</a>
+            <a href="#" class="name-brand my-2">Perfect Grade</a>
+            <a href="#" class="name-brand my-2">Kotobukiya</a>
+            <a href="#" class="name-brand my-2">HG</a>
+          </div>
         </div>
         <div class="col-md-10">
           <div class="row my-2">
-            <div class="col-lg-12">
+            <div class="col-lg-12 header-container">
               <div class="btn-group">
                 <button class="btn btn-info" id="list">
                   <i class="fa-solid fa-list"></i>
@@ -123,6 +118,19 @@
                   <i class="fas fa-th"></i>
                 </button>
               </div>
+              <div class="filter">
+                <div class="btn-group">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-filter"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div id="product" class="row">
@@ -130,7 +138,7 @@
               <div class="card" style="width: 18rem;">
                 <img src="../assets/img/img demo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">MG</h5>
                   <p class="card-text">
                     <del>
                       <span>229.000đ</span>
@@ -164,7 +172,7 @@
               <div class="card" style="width: 18rem;">
                 <img src="../assets/img/img demo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">RG</h5>
                   <p class="card-text">
                     <del>
                       <span>229.000đ</span>
@@ -181,7 +189,7 @@
               <div class="card" style="width: 18rem;">
                 <img src="../assets/img/img demo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Perfect Grade</h5>
                   <p class="card-text">
                     <del>
                       <span>229.000đ</span>
@@ -198,7 +206,7 @@
               <div class="card" style="width: 18rem;">
                 <img src="../assets/img/img demo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Kotobukiya</h5>
                   <p class="card-text">
                     <del>
                       <span>229.000đ</span>
@@ -215,7 +223,7 @@
               <div class="card" style="width: 18rem;">
                 <img src="../assets/img/img demo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">HG</h5>
                   <p class="card-text">
                     <del>
                       <span>229.000đ</span>
@@ -335,6 +343,10 @@
       event.preventDefault();
       $(".item").removeClass("col-lg-12");
       $(".item").addClass("col-lg-4");
+    });
+    $("#name-brand").click(function (e) {
+      e.preventDefault();
+      alert($("#name-brand").get());
     });
   });
 </script>

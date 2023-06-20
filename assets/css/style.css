@@ -129,6 +129,20 @@
 /* end Loading page css */
 
 /* navigation css */
+.dropdown-menu {
+  background-color: #212529 !important;
+}
+
+.dropdown-item {
+  color: white !important;
+  opacity: 0.6;
+}
+
+.dropdown-item:hover {
+  background-color: gray !important;
+  opacity: 1;
+}
+
 .navbar {
   padding: 0 !important;
 }
