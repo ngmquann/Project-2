@@ -13,11 +13,9 @@ video {
 .first-content {
   position: relative;
   display: block;
-  justify-content: center;
   left: 50%;
   transform: translate(-50%);
   z-index: 0;
-  height: 532px;
 }
 
 .text-on-video {
@@ -143,7 +141,7 @@ video {
 .title-model {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 70px;
+  font-size: 20vw;
   line-height: 85px;
   color: #fffcfc;
   position: relative;
