@@ -141,7 +141,7 @@ video {
 .title-model {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 20vw;
+  font-size: 70px;
   line-height: 85px;
   color: #fffcfc;
   position: relative;
@@ -296,6 +296,10 @@ video {
     width: 200px;
     height: 180px;
   }
+
+  .title-model {
+    font-size: 10vw;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -309,5 +313,9 @@ video {
   }
   .first-content {
     margin-bottom: calc(100vh - 532px - 80px);
+  }
+
+  .title-model {
+    font-size: 10vw;
   }
 }
