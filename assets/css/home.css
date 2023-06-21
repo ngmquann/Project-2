@@ -299,6 +299,7 @@ video {
 
   .title-model {
     font-size: 10vw;
+    max-height: 15vh;
   }
 }
 
@@ -317,5 +318,6 @@ video {
 
   .title-model {
     font-size: 10vw;
+    max-height: 15vh;
   }
 }
