@@ -42,3 +42,7 @@ ins {
 .name-brand {
   text-decoration: none;
 }
+
+.list-group-flush::-webkit-scrollbar {
+  display: none;
+}
